@@ -1,0 +1,23 @@
+opam-version: "2.0"
+synopsis: "Symbolic execution debug adapter protocol"
+description: """
+An extension to the Debug Adapter Protocol for debugging Symbolic Execution.
+"""
+maintainer: "Nat Karmios <n.karmios@imperial.ac.uk>"
+authors: "Nat Karmios <n.karmios@imperial.ac.uk>"
+license: "MIT"
+homepage: "https://github.com/GillianPlatform/sedap-ocaml"
+bug-reports: "https://github.com/GillianPlatform/sedap-ocaml/issues"
+dev-repo: "git+https://github.com/GillianPlatform/sedap-ocaml.git"
+doc: "https://github.com/GillianPlatform/sedap-ocaml"
+depends: [
+  "ocaml" {>= "4.14.0"}
+  "dune" {>= "2.8"}
+  "yojson"
+  "ppx_deriving"
+  "ppx_deriving_yojson"
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]

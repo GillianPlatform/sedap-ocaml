@@ -1,0 +1,6 @@
+(library
+ (name sedap_types)
+ (public_name sedap.types)
+ (preprocess
+  (pps ppx_deriving.std ppx_deriving_yojson ppx_deriving.make lwt_ppx))
+ (libraries dap.types yojson))

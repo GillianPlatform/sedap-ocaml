@@ -1,0 +1,4 @@
+(library
+ (name sedap_rpc)
+ (public_name sedap.rpc)
+ (libraries dap.rpc_lwt))

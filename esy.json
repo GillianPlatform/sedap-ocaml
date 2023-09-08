@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "format-check": "dune build @fmt",
+    "format": "dune build @fmt --auto-promote"
+  },
+  "dependencies": {
+    "@opam/dap": "1.0.6"
+  },
+  "devDependencies": {
+    "ocaml": "4.14.x",
+    "@opam/dune": "*",
+    "@opam/ocaml-lsp-server": "1.12.2",
+    "@opam/ocamlformat": "0.24.1"
+  },
+  "esy": {
+    "build": "dune build @install --promote-install-files",
+    "install": [
+      "esy-installer sedap.install"
+    ],
+    "buildsInSource": "_build"
+  }
+}
