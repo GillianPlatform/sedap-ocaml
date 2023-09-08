@@ -1,0 +1,60 @@
+# Misc editors
+*.autosave
+.*.swp
+.*.swo
+*~
+
+# Images
+*.dot
+
+# Python things
+__pycache__
+*.pyc
+
+# Eclipse
+TAGS
+.metadata
+.paths
+.project
+.projectSettings
+.settings
+
+# OCaml
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.o
+_build
+*.native
+*.byte
+*.merlin
+_opam
+
+# Mac rubbish
+.DS_Store
+
+config/config.xml
+src/localconfig.ml
+tests/dot
+
+rosette/compiled
+
+# esy + docker stuff
+node_modules
+_esy
+doc
+*.install
+_build.prev
+_release
+
+# Dependency graphs
+with-depgraph.esy.lock
+with-depgraph.json
+see_deps.py
+
+# Development container
+.devcontainer
+
+# VSCode
+.vscode/settings.json
